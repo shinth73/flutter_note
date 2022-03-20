@@ -157,8 +157,7 @@ class __$NoteCopyWithImpl<$Res> extends _$NoteCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+@JsonSerializable()
 class _$_Note implements _Note {
   const _$_Note(
       {this.id,

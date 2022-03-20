@@ -1,39 +1,34 @@
-import 'package:flutter_note_app/src/data/data_source/note_db.dart';
+import 'package:flutter_note_app/src/data/data_source/note_db_helper.dart';
 import 'package:flutter_note_app/src/domain/model/note.dart';
 import 'package:flutter_note_app/src/domain/repository/note_repository.dart';
 
 class NoteRepositoryImpl implements NoteRepository {
-  final NoteDb db;
+  final NoteDbHelper db;
 
   NoteRepositoryImpl(this.db);
 
   @override
-  Future<void> deleteNote(Note note) {
-    // TODO: implement deleteNote
-    throw UnimplementedError();
+  Future<void> deleteNote(Note note) async {
+    await db.deleteNote(note);
   }
 
   @override
-  Future<Note> getNoteById(int id) {
-    // TODO: implement getNoteById
-    throw UnimplementedError();
+  Future<Note?> getNoteById(int id) async {
+    return await db.getNoteById(id);
   }
 
   @override
-  Future<List<Note>> getNotes() {
-    // TODO: implement getNotes
-    throw UnimplementedError();
+  Future<List<Note>> getNotes() async {
+    return  await db.getNotes();
   }
 
   @override
-  Future<void> insertNote(Note note) {
-    // TODO: implement insertNote
-    throw UnimplementedError();
+  Future<void> insertNote(Note note) async {
+    await db.insertNote(note);
   }
 
   @override
-  Future<void> updateNote(Note note) {
-    // TODO: implement updateNote
-    throw UnimplementedError();
+  Future<void> updateNote(Note note) async {
+    await db.updateNote(note);
   }
 }
