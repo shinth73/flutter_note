@@ -18,14 +18,14 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$AddEditNoteEventTearOff {
   const _$AddEditNoteEventTearOff();
 
-  changeColor changeColor(int color) {
-    return changeColor(
+  _changeColor changeColor(int color) {
+    return _changeColor(
       color,
     );
   }
 
-  saveNote saveNote(int? id, String title, String content) {
-    return saveNote(
+  _saveNote saveNote(int? id, String title, String content) {
+    return _saveNote(
       id,
       title,
       content,
@@ -59,20 +59,20 @@ mixin _$AddEditNoteEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(changeColor value) changeColor,
-    required TResult Function(saveNote value) saveNote,
+    required TResult Function(_changeColor value) changeColor,
+    required TResult Function(_saveNote value) saveNote,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(changeColor value)? changeColor,
-    TResult Function(saveNote value)? saveNote,
+    TResult Function(_changeColor value)? changeColor,
+    TResult Function(_saveNote value)? saveNote,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(changeColor value)? changeColor,
-    TResult Function(saveNote value)? saveNote,
+    TResult Function(_changeColor value)? changeColor,
+    TResult Function(_saveNote value)? saveNote,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -96,29 +96,29 @@ class _$AddEditNoteEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class $changeColorCopyWith<$Res> {
-  factory $changeColorCopyWith(
-          changeColor value, $Res Function(changeColor) then) =
-      _$changeColorCopyWithImpl<$Res>;
+abstract class _$changeColorCopyWith<$Res> {
+  factory _$changeColorCopyWith(
+          _changeColor value, $Res Function(_changeColor) then) =
+      __$changeColorCopyWithImpl<$Res>;
   $Res call({int color});
 }
 
 /// @nodoc
-class _$changeColorCopyWithImpl<$Res>
+class __$changeColorCopyWithImpl<$Res>
     extends _$AddEditNoteEventCopyWithImpl<$Res>
-    implements $changeColorCopyWith<$Res> {
-  _$changeColorCopyWithImpl(
-      changeColor _value, $Res Function(changeColor) _then)
-      : super(_value, (v) => _then(v as changeColor));
+    implements _$changeColorCopyWith<$Res> {
+  __$changeColorCopyWithImpl(
+      _changeColor _value, $Res Function(_changeColor) _then)
+      : super(_value, (v) => _then(v as _changeColor));
 
   @override
-  changeColor get _value => super._value as changeColor;
+  _changeColor get _value => super._value as _changeColor;
 
   @override
   $Res call({
     Object? color = freezed,
   }) {
-    return _then(changeColor(
+    return _then(_changeColor(
       color == freezed
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
@@ -129,8 +129,8 @@ class _$changeColorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$changeColor implements changeColor {
-  const _$changeColor(this.color);
+class _$_changeColor implements _changeColor {
+  const _$_changeColor(this.color);
 
   @override
   final int color;
@@ -144,7 +144,7 @@ class _$changeColor implements changeColor {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is changeColor &&
+            other is _changeColor &&
             const DeepCollectionEquality().equals(other.color, color));
   }
 
@@ -154,8 +154,8 @@ class _$changeColor implements changeColor {
 
   @JsonKey(ignore: true)
   @override
-  $changeColorCopyWith<changeColor> get copyWith =>
-      _$changeColorCopyWithImpl<changeColor>(this, _$identity);
+  _$changeColorCopyWith<_changeColor> get copyWith =>
+      __$changeColorCopyWithImpl<_changeColor>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -191,8 +191,8 @@ class _$changeColor implements changeColor {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(changeColor value) changeColor,
-    required TResult Function(saveNote value) saveNote,
+    required TResult Function(_changeColor value) changeColor,
+    required TResult Function(_saveNote value) saveNote,
   }) {
     return changeColor(this);
   }
@@ -200,8 +200,8 @@ class _$changeColor implements changeColor {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(changeColor value)? changeColor,
-    TResult Function(saveNote value)? saveNote,
+    TResult Function(_changeColor value)? changeColor,
+    TResult Function(_saveNote value)? saveNote,
   }) {
     return changeColor?.call(this);
   }
@@ -209,8 +209,8 @@ class _$changeColor implements changeColor {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(changeColor value)? changeColor,
-    TResult Function(saveNote value)? saveNote,
+    TResult Function(_changeColor value)? changeColor,
+    TResult Function(_saveNote value)? saveNote,
     required TResult orElse(),
   }) {
     if (changeColor != null) {
@@ -220,30 +220,30 @@ class _$changeColor implements changeColor {
   }
 }
 
-abstract class changeColor implements AddEditNoteEvent {
-  const factory changeColor(int color) = _$changeColor;
+abstract class _changeColor implements AddEditNoteEvent {
+  const factory _changeColor(int color) = _$_changeColor;
 
   int get color;
   @JsonKey(ignore: true)
-  $changeColorCopyWith<changeColor> get copyWith =>
+  _$changeColorCopyWith<_changeColor> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $saveNoteCopyWith<$Res> {
-  factory $saveNoteCopyWith(saveNote value, $Res Function(saveNote) then) =
-      _$saveNoteCopyWithImpl<$Res>;
+abstract class _$saveNoteCopyWith<$Res> {
+  factory _$saveNoteCopyWith(_saveNote value, $Res Function(_saveNote) then) =
+      __$saveNoteCopyWithImpl<$Res>;
   $Res call({int? id, String title, String content});
 }
 
 /// @nodoc
-class _$saveNoteCopyWithImpl<$Res> extends _$AddEditNoteEventCopyWithImpl<$Res>
-    implements $saveNoteCopyWith<$Res> {
-  _$saveNoteCopyWithImpl(saveNote _value, $Res Function(saveNote) _then)
-      : super(_value, (v) => _then(v as saveNote));
+class __$saveNoteCopyWithImpl<$Res> extends _$AddEditNoteEventCopyWithImpl<$Res>
+    implements _$saveNoteCopyWith<$Res> {
+  __$saveNoteCopyWithImpl(_saveNote _value, $Res Function(_saveNote) _then)
+      : super(_value, (v) => _then(v as _saveNote));
 
   @override
-  saveNote get _value => super._value as saveNote;
+  _saveNote get _value => super._value as _saveNote;
 
   @override
   $Res call({
@@ -251,7 +251,7 @@ class _$saveNoteCopyWithImpl<$Res> extends _$AddEditNoteEventCopyWithImpl<$Res>
     Object? title = freezed,
     Object? content = freezed,
   }) {
-    return _then(saveNote(
+    return _then(_saveNote(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -270,8 +270,8 @@ class _$saveNoteCopyWithImpl<$Res> extends _$AddEditNoteEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$saveNote implements saveNote {
-  const _$saveNote(this.id, this.title, this.content);
+class _$_saveNote implements _saveNote {
+  const _$_saveNote(this.id, this.title, this.content);
 
   @override
   final int? id;
@@ -289,7 +289,7 @@ class _$saveNote implements saveNote {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is saveNote &&
+            other is _saveNote &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.content, content));
@@ -304,8 +304,8 @@ class _$saveNote implements saveNote {
 
   @JsonKey(ignore: true)
   @override
-  $saveNoteCopyWith<saveNote> get copyWith =>
-      _$saveNoteCopyWithImpl<saveNote>(this, _$identity);
+  _$saveNoteCopyWith<_saveNote> get copyWith =>
+      __$saveNoteCopyWithImpl<_saveNote>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -341,8 +341,8 @@ class _$saveNote implements saveNote {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(changeColor value) changeColor,
-    required TResult Function(saveNote value) saveNote,
+    required TResult Function(_changeColor value) changeColor,
+    required TResult Function(_saveNote value) saveNote,
   }) {
     return saveNote(this);
   }
@@ -350,8 +350,8 @@ class _$saveNote implements saveNote {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(changeColor value)? changeColor,
-    TResult Function(saveNote value)? saveNote,
+    TResult Function(_changeColor value)? changeColor,
+    TResult Function(_saveNote value)? saveNote,
   }) {
     return saveNote?.call(this);
   }
@@ -359,8 +359,8 @@ class _$saveNote implements saveNote {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(changeColor value)? changeColor,
-    TResult Function(saveNote value)? saveNote,
+    TResult Function(_changeColor value)? changeColor,
+    TResult Function(_saveNote value)? saveNote,
     required TResult orElse(),
   }) {
     if (saveNote != null) {
@@ -370,13 +370,13 @@ class _$saveNote implements saveNote {
   }
 }
 
-abstract class saveNote implements AddEditNoteEvent {
-  const factory saveNote(int? id, String title, String content) = _$saveNote;
+abstract class _saveNote implements AddEditNoteEvent {
+  const factory _saveNote(int? id, String title, String content) = _$_saveNote;
 
   int? get id;
   String get title;
   String get content;
   @JsonKey(ignore: true)
-  $saveNoteCopyWith<saveNote> get copyWith =>
+  _$saveNoteCopyWith<_saveNote> get copyWith =>
       throw _privateConstructorUsedError;
 }
